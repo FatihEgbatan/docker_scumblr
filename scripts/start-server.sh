@@ -12,12 +12,14 @@ then
 fi
 
 if [ "$SCUMBLR_LOAD_SCHEMA" == "true" ]
-  bundle exec rake db:schema:load
 then
+  bundle exec rake db:schema:load
+fi
 
 if [ "$SCUMBLR_RUN_MIGRATIONS" == "true" ]
-  bundle exec rake db:migrate
 then
+  bundle exec rake db:migrate
+fi
 
 bundle exec rake db:seed 
 bundle exec rake assets:precompile
