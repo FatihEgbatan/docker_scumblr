@@ -2,7 +2,7 @@
 
 source /etc/profile.d/rvm.sh
 
-git clone https://github.com/Netflix/scumblr.git /scumblr 
+git clone https://github.com/Netflix/scumblr.git
 
 cd /scumblr
 
